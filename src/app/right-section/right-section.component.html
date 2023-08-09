@@ -1,0 +1,27 @@
+<div class="right-section">
+  <div class="input-section">
+    <input type="text" placeholder="add name ,age" [(ngModel)]="nameandage" />
+    <button (click)="addItems()">Add</button>
+  </div>
+  <div class="deleted-name">
+    <h3>Deleted Names</h3>
+    <ul>
+      <li *ngFor="let name of deletedNames">{{ name }}</li>
+    </ul>
+  </div>
+  <app-sub-section [people]="addedPeople"></app-sub-section>
+  <!-- <div class="sub-section">
+    <div class="sub-section-list">
+      <h3>Added Names</h3>
+      <ul>
+        <li *ngFor="let name of addedPeople">{{ name.name }}</li>
+      </ul>
+    </div>
+    <div class="sub-section-list">
+      <h3>Added Ages</h3>
+      <ul>
+        <li *ngFor="let age of addedPeople">{{ age.age }}</li>
+      </ul>
+    </div>
+  </div> -->
+</div>
