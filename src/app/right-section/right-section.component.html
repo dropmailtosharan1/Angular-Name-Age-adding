@@ -1,6 +1,10 @@
 <div class="right-section">
   <div class="input-section">
-    <input type="text" placeholder="add name ,age" [(ngModel)]="nameandage" />
+    <input
+      type="text"
+      placeholder="name, age - ex: Kumar,27"
+      [(ngModel)]="nameandage"
+    />
     <button (click)="addItems()">Add</button>
   </div>
   <div class="deleted-name">
