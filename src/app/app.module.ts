@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { LeftSectionComponent } from './left-section/left-section.component';
 import { RightSectionComponent } from './right-section/right-section.component';
 import { SubSectionComponent } from './sub-section/sub-section.component';
@@ -13,22 +11,21 @@ import { UserService } from './user.service';
 
 @NgModule({
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-    ])
+    RouterModule.forRoot([]),
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    ProductListComponent,LeftSectionComponent,RightSectionComponent,SubSectionComponent
+    LeftSectionComponent,
+    RightSectionComponent,
+    SubSectionComponent,
   ],
-  bootstrap: [ AppComponent ],
-  providers:[UserService]
+  bootstrap: [AppComponent],
+  providers: [UserService],
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.

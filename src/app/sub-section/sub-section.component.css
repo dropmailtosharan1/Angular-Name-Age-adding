@@ -1,10 +1,9 @@
-.sub-section{
+.sub-section {
   display: flex;
   justify-content: space-between;
 }
-.sub-section-list{
+.sub-section-list {
   width: 48%;
   border: 1px solid black;
   padding: 10px;
-  
 }
